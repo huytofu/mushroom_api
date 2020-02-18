@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mkdir -p logs/tests/ && touch logs/tests/result.txt && NODE_ENV=development mocha --exit --timeout 15000 -R spec tests/**/*.js 2>&1 | tee logs/tests/result.txt",
+    "nodemon": "nodemon ./bin/www.js"
   },
   "engines": {
     "node": "8.16.x"
@@ -13,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
     "child_process": "^1.0.2",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
@@ -20,10 +22,14 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "html": "^1.0.0",
+    "mocha": "^7.0.1",
     "moment": "^2.24.0",
     "path": "^0.12.7",
     "pug": "^2.0.4",
     "raven": "^2.6.4",
-    "serve-favicon": "^2.5.0"
-  }
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {}
 }

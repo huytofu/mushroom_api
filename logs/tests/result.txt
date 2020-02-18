@@ -1,0 +1,9 @@
+
+
+  Unit Tests For Api
+    ✓ GET/prediction/get-mushroom-edibility-prediction (1567ms)
+    ✓ GET/prediction/get-mushroom-historical-predictions
+
+
+  2 passing (2s)
+

@@ -1,0 +1,11 @@
+<html>
+  <h1>Historical predictions retrieval successful</h1>
+  <h1>My last <%= predictions.length %> prediction attempt(s) was/were</h1>
+  <% predictions.forEach( function(prediction){ %>
+      <li><%= prediction[0] %>
+        <br>  at timestamp <%= prediction[1] %>
+        <br>  with inputs = <%- prediction[2] %>
+      </li>
+      <br/>
+  <% }) %>
+</html>

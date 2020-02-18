@@ -28,7 +28,7 @@ router.get('/get-mushroom-historical-predictions', (req, res, next)=>{
     let fields = [{key : 'num_last', required: true}]
     generalHelper.getReqFields(req, res, next, fields);
   }, (req, res)=>{
-    let input = req.fieldValues.num_last;
+    let input = req.fieldValues.num_last.value;
     let {err, result} = PredictionController.load_past_preds(input);
     if(!err){
         return generalHelper.api_mw_createRes(

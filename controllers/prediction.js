@@ -4,13 +4,14 @@ var PredictionModel = require('../models/prediction');
 
 let PredictionController = {
     load_past_preds: function(num_preds){
-        if(typeof num_preds === 'int'){
+        num_preds = parseInt(num_preds);
+        if(typeof num_preds === typeof(1)){
             if(num_preds < historical_predictions.length){
                 return {err: false, result: historical_predictions.splice(-num_preds)};
             }
             return {err: false, result: historical_predictions};
         } else {
-            return {err: true, result:null};
+            return {err: true, result: null};
         }
     },
     get_mushroom_prediction: (input, callback)=>{
@@ -24,7 +25,7 @@ let PredictionController = {
                 let current = moment().format('YYYY-MM-DD HH:mm:ss');
                 //Add to list of historical predictions. Capped at 100 past preds
                 historical_predictions.push([data_out, current, input])
-                if(historical_predictions.length > 100){
+                if(historical_predictions.length > 50){
                     historical_predictions.shift();
                 }
                 callback(err, data_out);

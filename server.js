@@ -8,9 +8,9 @@ module.exports = {
         var port = process.env.PORT || 4000;
         var server = http.createServer(app);
         app.set('port', port);
-        // var io = require('socket.io').listen(server);
-        // var socket = require('./configs/socket');
-        // socket.init(io);
+        var io = require('socket.io').listen(server);
+        var socket = require('./configs/socket');
+        socket.init(io);
         /**
          * Listen on provided port, on all network interfaces.
          */

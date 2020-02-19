@@ -7,7 +7,7 @@ let PredictionController = {
         num_preds = parseInt(num_preds);
         if(typeof num_preds === typeof(1)){
             if(num_preds < historical_predictions.length){
-                return {err: false, result: historical_predictions.splice(-num_preds)};
+                return {err: false, result: [...historical_predictions].splice(-num_preds)};
             }
             return {err: false, result: historical_predictions};
         } else {

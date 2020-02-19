@@ -2,6 +2,7 @@ import pickle
 import json
 import sys
 import os
+sys.path.append(os.path.join(os.getcwd(), 'python-packages'))
 import numpy as np
 
 def get_model():

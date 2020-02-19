@@ -15,7 +15,7 @@ describe.only('Unit Tests For Model -> Prediction', function () {
     .catch(err=>({result: null, err}))
     .then(response=>{
         let {result, err} = response;
-        err? console.log(err.toString()): console.log(result.toString())
+        // err? console.log(err.toString()): console.log(result.toString())
         result = JSON.parse(result.toString());
         assert.isNull(err);
   			assert.isNotNull(result);
@@ -34,7 +34,7 @@ describe.only('Unit Tests For Model -> Prediction', function () {
 			.catch(err => ({err, result: null}))
 			.then(response => {
 				let {err, result} = response;
-        err? console.log(err.toString()): console.log(result.toString())
+        // err? console.log(err.toString()): console.log(result.toString())
         result = result.toString();
 				assert.isNull(err);
 				assert.isNotNull(result);

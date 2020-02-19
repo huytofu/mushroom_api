@@ -9,8 +9,8 @@ WORKDIR '/app'
 COPY . /app
 
 # Install any needed packages specified in package.json
-RUN apt-get update
-RUN apt install python3-pip -y
+RUN apt-get update ||
+RUN apt-get install python3-pip -y
 RUN pip3 install numpy
 RUN npm install -g nodemon
 RUN npm install

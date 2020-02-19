@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mkdir -p logs/tests/ && touch logs/tests/result.txt && NODE_ENV=development mocha --exit --timeout 15000 -R spec tests/**/*.js 2>&1 | tee logs/tests/result.txt",
+    "test": "mkdir -p logs/tests/ && touch logs/tests/result.txt && mocha --exit --timeout 15000 -R spec tests/**/*.js 2>&1 | tee logs/tests/result.txt",
     "nodemon": "npm run test && nodemon ./bin/www.js"
   },
   "engines": {

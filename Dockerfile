@@ -9,7 +9,7 @@ WORKDIR '/app'
 COPY . /app
 
 # Install any needed packages specified in package.json
-RUN apt-get update || : && apt-get install python -y
+RUN apt-get update
 RUN apt install python3-pip -y
 RUN pip3 install numpy
 RUN npm install -g nodemon
@@ -19,4 +19,5 @@ RUN npm install
 EXPOSE 4000
 
 # Run index.js when the container launches
+RUN npm run test
 CMD ["nodemon", "./bin/www.js"]

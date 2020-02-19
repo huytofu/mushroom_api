@@ -13,10 +13,11 @@ RUN apt-get update || : && apt-get install python -y
 RUN apt install python3-pip -y
 RUN pip3 install numpy
 RUN pip3 install pandas
+RUN npm install -g nodemon
 RUN npm install
 
 # Make port 4000 available to the world outside this container
 EXPOSE 4000
 
 # Run index.js when the container launches
-CMD ["npm run nodemon"]
+CMD ["nodemon", "./bin/www.js"]

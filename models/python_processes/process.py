@@ -2,7 +2,6 @@ import pickle
 import os
 import json
 import sys
-import pandas as pd 
 
 def load_columns():
     path = os.path.join(os.getcwd(), 

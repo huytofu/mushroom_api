@@ -6,7 +6,7 @@ fs.readFile('./ml_model/remaining_columns.txt', 'utf8', (err, data)=>{
    num_features = data.trim().split('\n').length
 })
 
-describe.only('Unit Test For Model -> Prediction', function () {
+describe.only('Unit Tests For Model -> Prediction', function () {
 
 	it('PredictionModel.process_input (should pass)', (done) => {
 		let input_data = JSON.stringify({"cap-surface":{"value":"s"}, "gill-color":{"value":"w"}}); //Zave Standard plan

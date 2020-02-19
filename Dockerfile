@@ -12,8 +12,6 @@ COPY . /app
 RUN apt-get update || : && apt-get install python -y
 RUN apt install python3-pip -y
 RUN pip3 install numpy
-RUN pip3 install pandas
-RUN pip3 install os
 RUN npm install -g nodemon
 RUN npm install
 

@@ -2,11 +2,10 @@ import pickle
 import json
 import sys
 import os
-sys.path.append(os.path.join(os.getcwd(), 'python-packages'))
 import numpy as np
 
 def get_model():
-    model_dir = os.path.join(os.getcwd(), 'ml_model/mushroom_model.pkl')
+    model_dir = 'ml_model/mushroom_model.pkl'
     model = pickle.load(open(model_dir, 'rb'))
     return model
 
@@ -21,7 +20,7 @@ def main():
     
     x = model.predict(np.array(myarr).astype(np.float32).reshape(1, -1)) 
     print(get_class(x[0]))
-    # print(type(myarr))
+    # print(sys.path)
     sys.stdout.flush()
     
 if __name__ == '__main__':

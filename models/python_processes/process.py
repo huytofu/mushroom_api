@@ -4,9 +4,7 @@ import json
 import sys
 
 def load_columns():
-    path = os.path.join(os.getcwd(), 
-        'ml_model/remaining_columns.txt'
-    )
+    path = 'ml_model/remaining_columns.txt'
     with open(path, 'r') as f:
         data = [column.replace('\n','') for column in f.readlines()]
         return data

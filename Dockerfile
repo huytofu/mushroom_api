@@ -11,9 +11,7 @@ COPY . /app
 # Install any needed packages specified in package.json
 RUN apt-get update
 RUN apt-get install python3-pip -y
-RUN mkdir python-packages
-RUN export PYTHONPATH=$PWD/python-packages
-RUN pip3 install numpy --target=python-packages
+RUN pip3 install numpy --target=models/python_processes
 RUN npm install -g nodemon
 RUN npm install
 

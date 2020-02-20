@@ -4,7 +4,8 @@
 
 1. INSTALL NODE.JS (VERSION = 8.16.x) - NPM IS MOSTLY DISTRIBUTED TOGETHER
 2. INSTALL PYTHON (VERSION >= 3.6) - PIP IS MOSTLY DISTRIBUTED TOGETHER
-### Alternatively, you can use
++ Alternatively, you can use <br/>
+###
       $ sudo apt-get update
       $ sudo apt-get install nodejs
       $ sudo apt-get install npm

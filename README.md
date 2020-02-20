@@ -2,9 +2,12 @@
 
 ### Instuctions on how to run the node server below
 
-1. INSTALL NODE.JS (VERSION = 8.16.x) - NPM IS DISTRIBUTED TOGETHER
-2. INSTALL PYTHON (VERSION >= 3.6) - PIP IS DISTRIBUTED TOGETHER
-### You can use
+1. INSTALL NODE.JS (VERSION = 8.16.x) - NPM IS MOSTLY DISTRIBUTED TOGETHER
+2. INSTALL PYTHON (VERSION >= 3.6) - PIP IS MOSTLY DISTRIBUTED TOGETHER
+### Alternatively, you can use
+      $ sudo apt-get update
+      $ sudo apt-get install nodejs
+      $ sudo apt-get install npm
       $ sudo apt-get python3-pip
 
 3. AFTER INSTALLING THE ABOVE TWO - RUN THE BELOW SCRIPTS TO INSTALL REQUIRED PACKAGES<br/>

@@ -26,6 +26,8 @@
       $ npm run test (Tests only)
       $ nodemon ./bin/www.js (Run the API server only)
 
++ Open [http://localhost:4000](http://localhost:4000) to view if the app is live.      
+
 5. HOW THE ML MODEL IS TRAINED, PRODUCED AND USED
 
 + The ML Model is produced via running **ml_model>main.py**

@@ -1,6 +1,6 @@
-### This api server is run using Node JS
+# This api server is run using Node JS
 
-## Instuctions on how to run the node server below
+### Instuctions on how to run the node server below
 
 1. INSTALL NODE.JS (VERSION = 8.16.x) - NPM IS DISTRIBUTED TOGETHER
 2. INSTALL PYTHON (VERSION >= 3.6) - PIP IS DISTRIBUTED TOGETHER   
@@ -16,9 +16,9 @@
 
 4. THE PROGRAM IS READY TO RUN. RUN IT WITH 
 
-    $ npm run nodemon 
-(Unit tests are automatically run with above scripts)
+    $ npm run nodemon (Unit tests are automatically run with above scripts)
 + Alternatively, you can run 
+
     $ npm run test (Tests only)
     $ nodemon ./bin/www.js (Run the API server only)
 

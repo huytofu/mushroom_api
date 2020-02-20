@@ -1,7 +1,6 @@
 import numpy as np
 import sklearn as skl
 import pandas as pd
-import tensorflow as tf
 import itertools
 
 def process_raw_data():    

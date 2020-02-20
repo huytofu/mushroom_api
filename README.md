@@ -25,8 +25,12 @@
       $ npm run test (Tests only)
       $ nodemon ./bin/www.js (Run the API server only)
 
-5. How the ML Model is produced
+5. HOW THE ML MODEL IS TRAINED, PRODUCED AND USED
+
 + The ML Model is produced via running **ml_model>main.py**
-+ Two files will be produced **ml_model>mushroom_model.pkl** and **ml_model>remaining_columns.txt** 
-+ The node server uses the above two files during prediction serving
-+ The node program spawns child python processes to process data and returns prediction each time API endpoint hit
++ The Model used for this prediction task is **Multinomial Naive Bayes**
++ The Best Model is selected via cross validation on the train set with accuracy metrics & final qualification on test set 
++ The Best Model is then subsequently retrained on entire dataset (train + set) for better accuracy of prediction
++ Two Files will be produced **ml_model>mushroom_model.pkl** and **ml_model>remaining_columns.txt** 
++ The Node Server uses the above two files during prediction serving
++ The Node Server spawns child python processes to process data and returns prediction each time API endpoint hit

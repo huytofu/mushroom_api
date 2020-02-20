@@ -8,14 +8,17 @@
       $ sudo apt-get python3-pip
 
 3. AFTER INSTALLING THE ABOVE TWO - RUN THE BELOW SCRIPTS TO INSTALL REQUIRED PACKAGES<br/>
+###
       $ pip3 install numpy
       $ pip3 install requirements.txt
       $ npm install -g nodemon
       $ npm install 
 
 4. THE PROGRAM IS READY TO RUN. RUN IT WITH <br/>
+###
       $ npm run nodemon (Unit tests are automatically run with above scripts)
 + Alternatively, you can run <br/>
+ ###
       $ npm run test (Tests only)
       $ nodemon ./bin/www.js (Run the API server only)
 

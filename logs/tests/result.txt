@@ -1,13 +1,13 @@
 
 
   Unit Tests For Api -> Prediction
-    ✓ GET/prediction/get-mushroom-edibility-prediction (1662ms)
+    ✓ GET/prediction/get-mushroom-edibility-prediction (982ms)
     ✓ GET/prediction/get-mushroom-historical-predictions
 
   Unit Tests For Model -> Prediction
-    ✓ PredictionModel.process_input (should pass) (52ms)
-    ✓ PredictionModel.get_pred (should pass) (849ms)
+    ✓ PredictionModel.process_input (should pass) (65ms)
+    ✓ PredictionModel.get_pred (should pass) (958ms)
 
 
-  4 passing (3s)
+  4 passing (2s)
 

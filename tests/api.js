@@ -5,7 +5,6 @@ var request = require('supertest');
 var assert = require('chai').assert;
 
 describe.only('Unit Tests For Api -> Prediction', function () {
-    this.timeout(5000);
     
     it('GET/prediction/get-mushroom-edibility-prediction', function (done) {
         request(server)

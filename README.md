@@ -19,7 +19,7 @@
     $ npm run nodemon (Unit tests are automatically run with above scripts)
 + Alternatively, you can run 
 ###<br/>
-    $ npm run test (Tests only)\n
+    $ npm run test (Tests only)\
     $ nodemon ./bin/www.js (Run the API server only)
 
 5. How the ML Model is produced

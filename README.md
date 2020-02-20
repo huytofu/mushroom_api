@@ -9,9 +9,9 @@
 
 3. AFTER INSTALLING THE ABOVE TWO - RUN THE BELOW SCRIPTS TO INSTALL REQUIRED PACKAGES
 
-    $ pip3 install numpy 
-    $ pip3 install requirements.txt
-    $ npm install -g nodemon
+    $ pip3 install numpy\n
+    $ pip3 install requirements.txt\n
+    $ npm install -g nodemon\n
     $ npm install 
 
 4. THE PROGRAM IS READY TO RUN. RUN IT WITH 
@@ -19,12 +19,11 @@
     $ npm run nodemon (Unit tests are automatically run with above scripts)
 + Alternatively, you can run 
 
-    $ npm run test (Tests only)
+    $ npm run test (Tests only)\n
     $ nodemon ./bin/www.js (Run the API server only)
 
 5. How the ML Model is produced
 + The ML Model is produced via running **ml_model>main.py**
 + Two files will be produced **ml_model>mushroom_model.pkl** and **remaining_columns.txt** 
-for the node program to use 
++ The node server uses the above two files during prediction serving
 + The node program spawns child python processes to processes data and returns prediction 
-whenever the prediction API endpoint is called

@@ -27,6 +27,6 @@
 
 5. How the ML Model is produced
 + The ML Model is produced via running **ml_model>main.py**
-+ Two files will be produced **ml_model>mushroom_model.pkl** and **remaining_columns.txt** 
++ Two files will be produced **ml_model>mushroom_model.pkl** and **ml_model>remaining_columns.txt** 
 + The node server uses the above two files during prediction serving
-+ The node program spawns child python processes to processes data and returns prediction 
++ The node program spawns child python processes to process data and returns prediction each time API endpoint hit

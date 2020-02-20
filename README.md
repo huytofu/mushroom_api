@@ -28,7 +28,8 @@
 
 + Open [http://localhost:4000](http://localhost:4000) to view if the app is live.      
 
-5. HOW THE ML MODEL IS TRAINED, PRODUCED AND USED
+
+### HOW THE ML MODEL IS TRAINED, PRODUCED AND USED
 
 + The ML Model is produced via running **ml_model>main.py**
 + The Model used for this prediction task is **Multinomial Naive Bayes**

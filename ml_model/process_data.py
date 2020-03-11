@@ -23,8 +23,8 @@ def exclude_correlated_attributes(df_one_hot_features):
         curr_columns = df_one_hot_features.columns
         num_col = len(curr_columns)
         
-        for i, j in itertools.combinations_with_replacement(range(num_col),2):
-            if i<j and mymatrix.iloc[i][j] >= 0.75:
+        for i, j in itertools.combinations(range(num_col),2):
+            if np.abs(mymatrix.iloc[i][j]) >= 0.75:
                 correlated = True
                 to_drop = curr_columns[i]
                 columns_dropped.append(to_drop)
